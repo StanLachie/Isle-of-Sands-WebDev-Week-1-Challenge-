@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a, a:visited, a:link {
+  text-decoration: none;
+}
+
+main {
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: -#fff;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.title {
+  padding: 0 10px;
+  color: #319eeb;
+}
+
+.desktop-quicklinks {
+  display: flex;
+  flex-direction: row;
+}
+
+.desktop-quicklinks a:link, .desktop-quicklinks a:visited, .desktop-quicklinks a {
+  text-decoration: none;
+}
+
+.desktop-quicklinks div {
+  color: #319eeb;
+  margin: 5px;
+  padding: 5px;
+  border: solid #319eeb 1px;
+  border-radius: 10px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.desktop-quicklinks div:hover {
+  position: relative;
+  top: -2px;
+  color: #ffffff;
+  background-color: #319eeb;
+}
+
+.desktop-quicklinks .cta {
+  color: #ffffff;
+  background-color: #319eeb;
+}
+
+.mobile-menu {
+  display: none;
+  margin-right: 10px;
+  z-index: 1;
+}
+
+
+.mobile-quicklinks {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #e6e6e6;
+  background-color: #ffffff;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.mobile-quicklinks div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  border-top: 1px solid #ececec;
+  text-decoration: none;
+}
+.mobile-quicklinks a, .mobile-quicklinks a:link, .mobile-quicklinks a:visited {
+  text-decoration: none;
+}
+
+main h2 {
+  position: relative;
+
+}
+
+.show {
+  display: block;
+}
+
+.fa-bars {
+  color: #319eeb;
+  font-size: x-large;
+}
+
+.bg-splash img {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 25px;
+  object-fit: cover;
+}
+
+.attractions {
+  display: flex;
+  justify-content: center;
+}
+
+.attractions__container {
+  width: 80%;
+  padding: 10px;
+  box-shadow: 0px 4px 7px #cecece;
+  border-radius: 25px;
+}
+
+.attractions__header {
+  color: #319eeb;
+  text-align: center;
+}
+
+.attractions__body {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.attractions__paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: 2px dotted #319eeb;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.attractions__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 35%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: 2px dotted #319eeb;
+  border-radius: 25px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.gallery__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  padding: 10px;
+  box-shadow: 0px 4px 7px #cecece;
+  border-radius: 25px;
+}
+
+.gallery__header {
+  color: #319eeb;
+  text-align: center;
+}
+
+.gallery__body {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: fit-content;
+  margin: 10px;
+  box-shadow: 0px 4px 7px #9c9c9c;
+  border-radius: 10px;
+}
+
+.card__img, .card__img * {
+  max-width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card__desc {
+  width: 250px;
+  padding: 10px 0;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.reviews__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  padding: 10px;
+  box-shadow: 0px 4px 7px #cecece;
+  border-radius: 25px;
+}
+
+.reviews__header {
+  color: #319eeb;
+  text-align: center;
+}
+
+.reviews__body {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.review {
+  max-width: 300px;
+  margin: 24px 6px;
+  padding: 6px;
+  box-shadow: 0px 4px 7px #9c9c9c;
+  border-radius: 10px;
+}
+
+.review h3 {
+  color:#319eeb;
+}
+
+@media only screen and (max-width: 767px) {
+  .desktop-quicklinks {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+  .fas {
+    display: block;
+  }
+  .attractions__paragraph {
+    max-width: 95%;
+  }
+  .attractions__list {
+    max-width: 95%;
+  }
+}
